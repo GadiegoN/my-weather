@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site do tempo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./public/code.png" type="image/x-icon" />
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div class="header-infos">
+                <form id="weather-form">
+                    <input type="text" name="city" id="city" placeholder="Nome da cidade" required>
+                    
+                    <button type="submit" id="search-button">Buscar</button>
+                </form>
+                
+                <!-- https://uiverse.io/ -->
+                <label for="theme" class="theme">
+                    <span class="theme__toggle-wrap">
+                        <input id="checkbox1" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+                        <span class="theme__icon">
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                        </span>
+                    </span>
+                </label>
+            </div>
+            
+            <div id="weather-info"></div>
+
+            
+        </div>
+
+        <script src="./script.js"></script>
+        <script src="./mode.js"></script>
+    </body>
+</html>
